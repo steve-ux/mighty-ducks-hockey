@@ -21,7 +21,7 @@
     flex-wrap: wrap; 
  }
  header {
-    background-image: url("../assets/design1_image1.jpg");
+    background-image: url("./design1_image1.jpg");
     height: 45vh;
     background-size: cover;
     background-position-x: center;
