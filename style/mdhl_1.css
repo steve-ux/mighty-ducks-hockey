@@ -1,0 +1,306 @@
+/*Fuentes*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap');
+
+*:not(li) {
+    margin: 0;
+    padding: 0; box-sizing: border-box;
+ }
+ :root {
+     --primarycolor: #ffe92e;
+     --primarycolorTransparent: #ffea2e96;
+     --secondarycolor: #5fa199;
+     --terciarycolor: black;  
+ }
+ body {
+    background-color: var(--terciarycolor);
+    height: 100vh;
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap; 
+ }
+ header {
+    background-image: url("../assets/design1_image1.jpg");
+    height: 45vh;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    width: 100%;
+    padding: 1rem;
+ }
+ h1 {
+     font-family: 'Poppins', sans-serif;
+     font-size: 3.5rem;
+     color: var(--terciarycolor);
+     text-shadow: 1px 1px 2px;
+     letter-spacing: .2rem;
+     text-decoration: blink;
+ }
+ h3 {
+     color: var(--primarycolor);
+     margin-left: 2rem;
+ }
+ h4 {
+     color: var(--primarycolor);
+ }
+ h5 {
+     text-decoration: underline;
+ }
+ #logo {
+    background-color: rgb(0, 0, 0);
+    height: 10rem;
+    position:absolute;
+    left: 70%;
+    top: 25vh;
+    height: 10rem;
+    animation: logo 1s ease 0s 1 normal forwards;
+ }
+ @keyframes logo {
+    0% {
+      opacity: 0;
+      transform: translateX(-250px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+ div {
+    width: 100%;
+    background-color: black;
+    color: rgb(207, 188, 9);
+    font-family:'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    border: 1px solid var(--primarycolor);
+ }
+ nav {
+    max-width: 10vw;
+    height: 100%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--terciarycolor);
+    text-transform: uppercase;
+    font-family: sans-serif;
+ }
+.menu {
+    color: var(--primarycolor);
+    text-decoration: none;
+    padding: .5rem 1rem;
+    font-weight: bold;
+    margin-top: 2rem;
+    border: 1px solid white;
+}
+a.menu:hover {
+    color: var(--secondarycolor);
+}
+a:hover {
+    color: var(--secondarycolor);
+}
+a {
+    text-decoration: none;
+    color: yellow;
+}
+main {
+    flex-grow: 1;
+    max-width: 80vw;
+    background-color: var(--terciarycolor);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 1rem;
+    height: 65vh;
+}
+.textos {
+    padding: 2rem 3rem;
+    padding-top: 2rem;
+    font-size: 1.3rem;
+    color: white;   
+}
+#image3 {
+    padding-left: 3rem;
+}
+table, tr, th, td {
+    border: 1px solid black;
+    
+}
+table {
+    border-collapse: collapse;
+    margin: 2rem;
+}
+thead tr {
+    background-color: var(--secondarycolor);
+    color: var(--terciarycolor);
+}
+tbody tr {
+    background-color: rebeccapurple;
+    color: black;
+}
+tbody tr:hover {
+    color: white;
+}
+caption {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-style: italic;
+    text-decoration: underline;
+    color: white;
+}
+.help {
+    margin-top: 1rem;
+    color: white;
+}
+.outdoor {
+    color: white;
+}
+.rulestitle {
+    text-align: center;
+    color: white;
+}
+.textrules {
+    margin-left: 2rem;
+}
+.titulosrules {
+    color: var(--primarycolor);
+    margin-left: -.5rem;
+}
+.sangría {
+    text-indent: 15px;
+    color: white;
+}
+.list {
+    padding: .5rem;
+    margin-left: 1rem;
+    color: white;
+}
+.maps {
+    margin: 1rem;
+}
+.maps:hover {
+    width: 110%;
+    height: 600px;
+    transition: 1s;
+}
+iframe {
+    border: 50px solid black;
+}
+#AJKatzenmaier {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+#Greenbay {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+#Howard {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+#Marjorie {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+#North {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+#South {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.show_data_title {
+    color: var(--primarycolor);
+}
+.show_data_table {
+    margin-left: 28rem;
+}
+form {
+    color: white;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+#input_name {
+    background-color: var(--secondarycolor);
+    margin-bottom: 1rem;
+    width: 25rem;
+}
+#input_last_name {
+    background-color: var(--secondarycolor);
+    margin-bottom: 1rem;
+    width: 25rem;
+}
+#street_address {
+    background-color: var(--secondarycolor);
+    margin-bottom: 1rem;
+    width: 25rem;
+}
+#city {
+    background-color: var(--secondarycolor);
+    margin-bottom: 1rem;
+    width: 25rem;
+}
+#zip {
+    background-color: var(--secondarycolor);
+    margin-bottom: 1rem;
+    width: 25rem;
+}
+#birth_date {
+    background-color: var(--secondarycolor);
+    margin-bottom: 1rem;
+    width: 25rem;
+}
+#gender {
+    margin-bottom: 1rem;
+    width: 25rem;
+    border: none;
+}
+#closet {
+    margin-bottom: 1rem;
+    width: 25rem;
+    border: none;
+}
+#position {
+    margin-bottom: 1rem;
+    width: 25rem;
+    border: none;
+}
+#uniform {
+    margin-bottom: 1rem;
+    width: 25rem;
+    border: none;
+}
+#signature {
+    background-color: var(--secondarycolor);
+    margin-bottom: 1rem;
+    width: 25rem;
+}
+#date {
+    background-color: var(--secondarycolor);
+    margin-bottom: 1rem;
+    width: 25rem;
+}
+.title_permission {
+    padding-bottom: 2rem;
+    border: none;
+    margin-top: 1.5rem;
+}
+.btn_send {
+    border: none;
+    width: 3rem;
+}
